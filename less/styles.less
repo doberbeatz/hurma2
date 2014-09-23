@@ -1,0 +1,24 @@
+@import "bootstrap/bootstrap.less";
+@import "variables.less";
+
+body, html {
+	font-family: @base_font;
+	height: 100%;
+}
+
+.main {
+	min-height: 100%;
+}
+
+footer {
+	background-color: @base_color;
+	height: 100px;
+}
+
+@import "header.less";
+@import "menu.less";
+@import "content.less";
+@import "sidebar.less";
+
+//Подключаем свои медиазапросы
+@import "hurma_media";

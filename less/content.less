@@ -1,0 +1,37 @@
+.hm_content {
+	padding: 0;
+	height: 100%;
+
+	.hm_thumbnail {
+		width: 100%;
+	}
+
+	.hm_content_top {
+		margin-bottom: 25px;
+
+		img {
+			border-bottom: @base_border_b_orange;
+			border-top: @base_border_b_orange;
+		}
+	  }
+	.hm_content_middle {
+
+		> div {
+			margin-bottom: 25px;
+
+			&.col-md-4:nth-child(3n+3):after {
+				clear: both;
+				content: " ";
+				display: table;
+			}
+		}
+
+		.hm_caption {
+			p {
+				text-align: justify;
+				max-height: 300px;
+				overflow: hidden;
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+#hm_menu {
+  padding: 0;
+}
+
+.hm_menu {
+	font-size: 25px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+
+	a {
+		color: #A1A1A1;
+		border-top: @base_border;
+		border-bottom: @base_border;
+		padding: 0px !important;
+
+		&:focus, &:hover {
+		  color: #fff;
+		  background-color: @base_color !important;
+		  border-top: @base_border_orange;
+		  border-bottom: @base_border;
+		}
+	}
+
+	.col-sm-3 {
+		  padding: 0;
+	}
+
+	.navbar-header {
+		background-color: @base_color;
+		border-radius: 5px;
+	  line-height: 50px;
+
+		.navbar-toggle {
+		  border-color: #fff;
+
+		  .icon-bar {
+			background-color: #fff;
+		  }
+		}
+
+		.hm_xs_menu_title {
+	    color: #fff;
+	    vertical-align: middle;
+		}
+	}
+}
