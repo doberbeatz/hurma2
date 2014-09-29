@@ -1,4 +1,6 @@
 .hm_content {
+	.make-md-column(9);
+
 	padding: 0;
 	height: 100%;
 
@@ -9,21 +11,23 @@
 	.hm_content_top {
 		margin-bottom: 25px;
 
-		img {
-			border-bottom: @base_border_b_orange;
-			border-top: @base_border_b_orange;
+		.hm_article {
+			.make-sm-column(6);
+
+			img {
+				border-bottom: @base_border_b_orange;
+				border-top: @base_border_b_orange;
+			}
 		}
-	  }
+	}
+
 	.hm_content_middle {
 
-		> div {
-			margin-bottom: 25px;
+		.hm_article {
+			.make-sm-column(6);
+			.make-md-column(4);
 
-			&.col-md-4:nth-child(3n+3):after {
-				clear: both;
-				content: " ";
-				display: table;
-			}
+			margin-bottom: 25px;
 		}
 
 		.hm_caption {
